@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034A8811263DF1E400C4D15B /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A8810263DF1E400C4D15B /* BaseTableViewController.swift */; };
+		034A8815263E9C7000C4D15B /* VenueListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A8814263E9C7000C4D15B /* VenueListPresenterTests.swift */; };
+		034A8818263E9CFD00C4D15B /* MockVenueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A8817263E9CFD00C4D15B /* MockVenueListView.swift */; };
+		034A881A263E9E1A00C4D15B /* MockVenueSearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A8819263E9E1A00C4D15B /* MockVenueSearchQuery.swift */; };
+		034A881C263E9E6900C4D15B /* MockLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A881B263E9E6900C4D15B /* MockLocationService.swift */; };
+		034A881E263EA07F00C4D15B /* CustomAsserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A881D263EA07F00C4D15B /* CustomAsserts.swift */; };
+		034A8820263EA59D00C4D15B /* XCTestCase+Eventually.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A881F263EA59D00C4D15B /* XCTestCase+Eventually.swift */; };
+		034A8822263EA75F00C4D15B /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A8821263EA75F00C4D15B /* LocationServiceTests.swift */; };
+		034A8824263EA7DE00C4D15B /* LocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A8823263EA7DE00C4D15B /* LocationManagerProtocol.swift */; };
+		034A8826263EA8B200C4D15B /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A8825263EA8B200C4D15B /* MockLocationManager.swift */; };
+		034A8840263F3F8B00C4D15B /* VenueListViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034A883F263F3F8B00C4D15B /* VenueListViewModelFactory.swift */; };
+		0388DE3D2641C98A00B0338C /* VenueListViewModelFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388DE3C2641C98A00B0338C /* VenueListViewModelFactoryTests.swift */; };
+		0388DE402641C9B600B0338C /* MockVenueListViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388DE3F2641C9B600B0338C /* MockVenueListViewModelFactory.swift */; };
+		0388DE422641CFCA00B0338C /* VenueListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388DE412641CFCA00B0338C /* VenueListAssembly.swift */; };
+		03BB6AFD263CA3C90018DD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6AFC263CA3C90018DD58 /* AppDelegate.swift */; };
+		03BB6AFF263CA3C90018DD58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6AFE263CA3C90018DD58 /* SceneDelegate.swift */; };
+		03BB6B01263CA3C90018DD58 /* VenueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B00263CA3C90018DD58 /* VenueListView.swift */; };
+		03BB6B04263CA3C90018DD58 /* VenueList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6B02263CA3C90018DD58 /* VenueList.storyboard */; };
+		03BB6B06263CA3D40018DD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6B05263CA3D40018DD58 /* Assets.xcassets */; };
+		03BB6B09263CA3D40018DD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6B07263CA3D40018DD58 /* LaunchScreen.storyboard */; };
+		03BB6B2D263CA4290018DD58 /* VenueListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B2C263CA4290018DD58 /* VenueListPresenter.swift */; };
+		03BB6B2F263CA4360018DD58 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B2E263CA4360018DD58 /* LocationService.swift */; };
+		03BB6B34263CA4C80018DD58 /* VenueSearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B33263CA4C80018DD58 /* VenueSearchQuery.swift */; };
+		03BB6B36263CA5780018DD58 /* VenueSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B35263CA5780018DD58 /* VenueSearchResponse.swift */; };
+		03BB6B38263CA5E30018DD58 /* VenueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B37263CA5E30018DD58 /* VenueEntity.swift */; };
+		03BB6B3A263CAE4F0018DD58 /* SubtitleItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B39263CAE4F0018DD58 /* SubtitleItemViewModel.swift */; };
+		03BB6B3C263CAE920018DD58 /* SubtitleItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6B3B263CAE920018DD58 /* SubtitleItem.xib */; };
+		03BB6B3E263CAEE70018DD58 /* SubtitleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B3D263CAEE70018DD58 /* SubtitleItem.swift */; };
+		03BB6B40263CB1240018DD58 /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB6B3F263CB1240018DD58 /* ListItemViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03BB6B10263CA3D40018DD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03BB6AF1263CA3C90018DD58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03BB6AF8263CA3C90018DD58;
+			remoteInfo = NordeaExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034A8810263DF1E400C4D15B /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		034A8814263E9C7000C4D15B /* VenueListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListPresenterTests.swift; sourceTree = "<group>"; };
+		034A8817263E9CFD00C4D15B /* MockVenueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVenueListView.swift; sourceTree = "<group>"; };
+		034A8819263E9E1A00C4D15B /* MockVenueSearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVenueSearchQuery.swift; sourceTree = "<group>"; };
+		034A881B263E9E6900C4D15B /* MockLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationService.swift; sourceTree = "<group>"; };
+		034A881D263EA07F00C4D15B /* CustomAsserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsserts.swift; sourceTree = "<group>"; };
+		034A881F263EA59D00C4D15B /* XCTestCase+Eventually.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Eventually.swift"; sourceTree = "<group>"; };
+		034A8821263EA75F00C4D15B /* LocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceTests.swift; sourceTree = "<group>"; };
+		034A8823263EA7DE00C4D15B /* LocationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerProtocol.swift; sourceTree = "<group>"; };
+		034A8825263EA8B200C4D15B /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
+		034A883F263F3F8B00C4D15B /* VenueListViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListViewModelFactory.swift; sourceTree = "<group>"; };
+		0388DE3C2641C98A00B0338C /* VenueListViewModelFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListViewModelFactoryTests.swift; sourceTree = "<group>"; };
+		0388DE3F2641C9B600B0338C /* MockVenueListViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVenueListViewModelFactory.swift; sourceTree = "<group>"; };
+		0388DE412641CFCA00B0338C /* VenueListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListAssembly.swift; sourceTree = "<group>"; };
+		03BB6AF9263CA3C90018DD58 /* NordeaExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NordeaExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BB6AFC263CA3C90018DD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03BB6AFE263CA3C90018DD58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03BB6B00263CA3C90018DD58 /* VenueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListView.swift; sourceTree = "<group>"; };
+		03BB6B03263CA3C90018DD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VenueList.storyboard; sourceTree = "<group>"; };
+		03BB6B05263CA3D40018DD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03BB6B08263CA3D40018DD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03BB6B0A263CA3D40018DD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BB6B0F263CA3D40018DD58 /* NordeaExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NordeaExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03BB6B15263CA3D40018DD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BB6B2C263CA4290018DD58 /* VenueListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListPresenter.swift; sourceTree = "<group>"; };
+		03BB6B2E263CA4360018DD58 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		03BB6B33263CA4C80018DD58 /* VenueSearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchQuery.swift; sourceTree = "<group>"; };
+		03BB6B35263CA5780018DD58 /* VenueSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSearchResponse.swift; sourceTree = "<group>"; };
+		03BB6B37263CA5E30018DD58 /* VenueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueEntity.swift; sourceTree = "<group>"; };
+		03BB6B39263CAE4F0018DD58 /* SubtitleItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleItemViewModel.swift; sourceTree = "<group>"; };
+		03BB6B3B263CAE920018DD58 /* SubtitleItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitleItem.xib; sourceTree = "<group>"; };
+		03BB6B3D263CAEE70018DD58 /* SubtitleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleItem.swift; sourceTree = "<group>"; };
+		03BB6B3F263CB1240018DD58 /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03BB6AF6263CA3C90018DD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BB6B0C263CA3D40018DD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034A8816263E9CDF00C4D15B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				034A881B263E9E6900C4D15B /* MockLocationService.swift */,
+				034A8825263EA8B200C4D15B /* MockLocationManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		034A8828263F361700C4D15B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B05263CA3D40018DD58 /* Assets.xcassets */,
+				03BB6B07263CA3D40018DD58 /* LaunchScreen.storyboard */,
+				03BB6B0A263CA3D40018DD58 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		034A8829263F365A00C4D15B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				034A8834263F378200C4D15B /* TableView */,
+				034A8831263F372E00C4D15B /* Items */,
+				034A8830263F372200C4D15B /* Location */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		034A882A263F367A00C4D15B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				034A882D263F36D500C4D15B /* Response */,
+				034A882C263F36B000C4D15B /* Entity */,
+				034A882B263F368F00C4D15B /* Queries */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		034A882B263F368F00C4D15B /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B33263CA4C80018DD58 /* VenueSearchQuery.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		034A882C263F36B000C4D15B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B37263CA5E30018DD58 /* VenueEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		034A882D263F36D500C4D15B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B35263CA5780018DD58 /* VenueSearchResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		034A882E263F36EE00C4D15B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				034A882F263F371000C4D15B /* VenueList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		034A882F263F371000C4D15B /* VenueList */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B02263CA3C90018DD58 /* VenueList.storyboard */,
+				03BB6B00263CA3C90018DD58 /* VenueListView.swift */,
+				03BB6B2C263CA4290018DD58 /* VenueListPresenter.swift */,
+				034A883F263F3F8B00C4D15B /* VenueListViewModelFactory.swift */,
+				0388DE412641CFCA00B0338C /* VenueListAssembly.swift */,
+			);
+			path = VenueList;
+			sourceTree = "<group>";
+		};
+		034A8830263F372200C4D15B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B2E263CA4360018DD58 /* LocationService.swift */,
+				034A8823263EA7DE00C4D15B /* LocationManagerProtocol.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		034A8831263F372E00C4D15B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				034A8833263F375C00C4D15B /* ListItem */,
+				034A8832263F374100C4D15B /* SubtitleItem */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		034A8832263F374100C4D15B /* SubtitleItem */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B39263CAE4F0018DD58 /* SubtitleItemViewModel.swift */,
+				03BB6B3B263CAE920018DD58 /* SubtitleItem.xib */,
+				03BB6B3D263CAEE70018DD58 /* SubtitleItem.swift */,
+			);
+			path = SubtitleItem;
+			sourceTree = "<group>";
+		};
+		034A8833263F375C00C4D15B /* ListItem */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6B3F263CB1240018DD58 /* ListItemViewModel.swift */,
+			);
+			path = ListItem;
+			sourceTree = "<group>";
+		};
+		034A8834263F378200C4D15B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				034A8810263DF1E400C4D15B /* BaseTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		034A8835263F37BD00C4D15B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6AFC263CA3C90018DD58 /* AppDelegate.swift */,
+				03BB6AFE263CA3C90018DD58 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		034A8836263F380300C4D15B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				034A8837263F380700C4D15B /* VenueList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		034A8837263F380700C4D15B /* VenueList */ = {
+			isa = PBXGroup;
+			children = (
+				034A8838263F381500C4D15B /* Mocks */,
+				034A8814263E9C7000C4D15B /* VenueListPresenterTests.swift */,
+				0388DE3C2641C98A00B0338C /* VenueListViewModelFactoryTests.swift */,
+			);
+			path = VenueList;
+			sourceTree = "<group>";
+		};
+		034A8838263F381500C4D15B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				034A8817263E9CFD00C4D15B /* MockVenueListView.swift */,
+				034A8819263E9E1A00C4D15B /* MockVenueSearchQuery.swift */,
+				0388DE3F2641C9B600B0338C /* MockVenueListViewModelFactory.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		034A883A263F387C00C4D15B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				034A883B263F388100C4D15B /* Location */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		034A883B263F388100C4D15B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				034A8821263EA75F00C4D15B /* LocationServiceTests.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		034A883C263F389000C4D15B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				034A883E263F38B600C4D15B /* TestHelpers */,
+				03BB6B15263CA3D40018DD58 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		034A883E263F38B600C4D15B /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				034A881D263EA07F00C4D15B /* CustomAsserts.swift */,
+				034A881F263EA59D00C4D15B /* XCTestCase+Eventually.swift */,
+			);
+			path = TestHelpers;
+			sourceTree = "<group>";
+		};
+		03BB6AF0263CA3C90018DD58 = {
+			isa = PBXGroup;
+			children = (
+				03BB6AFB263CA3C90018DD58 /* NordeaExercise */,
+				03BB6B12263CA3D40018DD58 /* NordeaExerciseTests */,
+				03BB6AFA263CA3C90018DD58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03BB6AFA263CA3C90018DD58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03BB6AF9263CA3C90018DD58 /* NordeaExercise.app */,
+				03BB6B0F263CA3D40018DD58 /* NordeaExerciseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03BB6AFB263CA3C90018DD58 /* NordeaExercise */ = {
+			isa = PBXGroup;
+			children = (
+				034A8835263F37BD00C4D15B /* Application */,
+				034A882E263F36EE00C4D15B /* Modules */,
+				034A882A263F367A00C4D15B /* Networking */,
+				034A8829263F365A00C4D15B /* Common */,
+				034A8828263F361700C4D15B /* SupportingFiles */,
+			);
+			path = NordeaExercise;
+			sourceTree = "<group>";
+		};
+		03BB6B12263CA3D40018DD58 /* NordeaExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				034A883C263F389000C4D15B /* SupportingFiles */,
+				034A883A263F387C00C4D15B /* Common */,
+				034A8836263F380300C4D15B /* Modules */,
+				034A8816263E9CDF00C4D15B /* Mocks */,
+			);
+			path = NordeaExerciseTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03BB6AF8263CA3C90018DD58 /* NordeaExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BB6B23263CA3D40018DD58 /* Build configuration list for PBXNativeTarget "NordeaExercise" */;
+			buildPhases = (
+				03BB6AF5263CA3C90018DD58 /* Sources */,
+				03BB6AF6263CA3C90018DD58 /* Frameworks */,
+				03BB6AF7263CA3C90018DD58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NordeaExercise;
+			productName = NordeaExercise;
+			productReference = 03BB6AF9263CA3C90018DD58 /* NordeaExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03BB6B0E263CA3D40018DD58 /* NordeaExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03BB6B26263CA3D40018DD58 /* Build configuration list for PBXNativeTarget "NordeaExerciseTests" */;
+			buildPhases = (
+				03BB6B0B263CA3D40018DD58 /* Sources */,
+				03BB6B0C263CA3D40018DD58 /* Frameworks */,
+				03BB6B0D263CA3D40018DD58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03BB6B11263CA3D40018DD58 /* PBXTargetDependency */,
+			);
+			name = NordeaExerciseTests;
+			productName = NordeaExerciseTests;
+			productReference = 03BB6B0F263CA3D40018DD58 /* NordeaExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03BB6AF1263CA3C90018DD58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					03BB6AF8263CA3C90018DD58 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					03BB6B0E263CA3D40018DD58 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 03BB6AF8263CA3C90018DD58;
+					};
+				};
+			};
+			buildConfigurationList = 03BB6AF4263CA3C90018DD58 /* Build configuration list for PBXProject "NordeaExercise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03BB6AF0263CA3C90018DD58;
+			productRefGroup = 03BB6AFA263CA3C90018DD58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03BB6AF8263CA3C90018DD58 /* NordeaExercise */,
+				03BB6B0E263CA3D40018DD58 /* NordeaExerciseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03BB6AF7263CA3C90018DD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BB6B3C263CAE920018DD58 /* SubtitleItem.xib in Resources */,
+				03BB6B09263CA3D40018DD58 /* LaunchScreen.storyboard in Resources */,
+				03BB6B06263CA3D40018DD58 /* Assets.xcassets in Resources */,
+				03BB6B04263CA3C90018DD58 /* VenueList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BB6B0D263CA3D40018DD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03BB6AF5263CA3C90018DD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BB6B38263CA5E30018DD58 /* VenueEntity.swift in Sources */,
+				03BB6B40263CB1240018DD58 /* ListItemViewModel.swift in Sources */,
+				034A8811263DF1E400C4D15B /* BaseTableViewController.swift in Sources */,
+				03BB6B01263CA3C90018DD58 /* VenueListView.swift in Sources */,
+				03BB6AFD263CA3C90018DD58 /* AppDelegate.swift in Sources */,
+				03BB6B2F263CA4360018DD58 /* LocationService.swift in Sources */,
+				03BB6B3A263CAE4F0018DD58 /* SubtitleItemViewModel.swift in Sources */,
+				034A8824263EA7DE00C4D15B /* LocationManagerProtocol.swift in Sources */,
+				03BB6B36263CA5780018DD58 /* VenueSearchResponse.swift in Sources */,
+				03BB6B2D263CA4290018DD58 /* VenueListPresenter.swift in Sources */,
+				0388DE422641CFCA00B0338C /* VenueListAssembly.swift in Sources */,
+				03BB6B34263CA4C80018DD58 /* VenueSearchQuery.swift in Sources */,
+				03BB6AFF263CA3C90018DD58 /* SceneDelegate.swift in Sources */,
+				03BB6B3E263CAEE70018DD58 /* SubtitleItem.swift in Sources */,
+				034A8840263F3F8B00C4D15B /* VenueListViewModelFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03BB6B0B263CA3D40018DD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034A881E263EA07F00C4D15B /* CustomAsserts.swift in Sources */,
+				034A8815263E9C7000C4D15B /* VenueListPresenterTests.swift in Sources */,
+				034A8822263EA75F00C4D15B /* LocationServiceTests.swift in Sources */,
+				034A881C263E9E6900C4D15B /* MockLocationService.swift in Sources */,
+				034A8820263EA59D00C4D15B /* XCTestCase+Eventually.swift in Sources */,
+				034A8826263EA8B200C4D15B /* MockLocationManager.swift in Sources */,
+				034A881A263E9E1A00C4D15B /* MockVenueSearchQuery.swift in Sources */,
+				0388DE402641C9B600B0338C /* MockVenueListViewModelFactory.swift in Sources */,
+				0388DE3D2641C98A00B0338C /* VenueListViewModelFactoryTests.swift in Sources */,
+				034A8818263E9CFD00C4D15B /* MockVenueListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03BB6B11263CA3D40018DD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03BB6AF8263CA3C90018DD58 /* NordeaExercise */;
+			targetProxy = 03BB6B10263CA3D40018DD58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03BB6B02263CA3C90018DD58 /* VenueList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03BB6B03263CA3C90018DD58 /* Base */,
+			);
+			name = VenueList.storyboard;
+			sourceTree = "<group>";
+		};
+		03BB6B07263CA3D40018DD58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03BB6B08263CA3D40018DD58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03BB6B21263CA3D40018DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03BB6B22263CA3D40018DD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03BB6B24263CA3D40018DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NordeaExercise/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rol.NordeaExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03BB6B25263CA3D40018DD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NordeaExercise/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rol.NordeaExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03BB6B27263CA3D40018DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NordeaExerciseTests/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rol.NordeaExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NordeaExercise.app/NordeaExercise";
+			};
+			name = Debug;
+		};
+		03BB6B28263CA3D40018DD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NordeaExerciseTests/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rol.NordeaExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NordeaExercise.app/NordeaExercise";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03BB6AF4263CA3C90018DD58 /* Build configuration list for PBXProject "NordeaExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BB6B21263CA3D40018DD58 /* Debug */,
+				03BB6B22263CA3D40018DD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BB6B23263CA3D40018DD58 /* Build configuration list for PBXNativeTarget "NordeaExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BB6B24263CA3D40018DD58 /* Debug */,
+				03BB6B25263CA3D40018DD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03BB6B26263CA3D40018DD58 /* Build configuration list for PBXNativeTarget "NordeaExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03BB6B27263CA3D40018DD58 /* Debug */,
+				03BB6B28263CA3D40018DD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03BB6AF1263CA3C90018DD58 /* Project object */;
+}
